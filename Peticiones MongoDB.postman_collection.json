@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e149c5b1-c9f6-47b3-b64a-be1f2e66f07f",
+		"name": "Peticiones MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/countries",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"country\":\"Genovia\",\r\n\t\"population\":9923,\r\n\t\"continent\":\"Europa\",\r\n\t\"lifeExpectancy\":43.8,\r\n\t\"purchasingPower\":974.58\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/countries/Colombia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/countries/Colombia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Colombia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/countries/Albania",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"population\":3600200,\r\n\t\"continent\":\"Europa\",\r\n\t\"lifeExpectancy\":71.8,\r\n\t\"purchasingPower\":5937.58\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/countries/Albania",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"countries",
+						"Albania"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
